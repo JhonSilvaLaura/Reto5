@@ -1,0 +1,116 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    background-image:linear-gradient( 
+        rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),
+    url("https://img.freepik.com/vector-gratis/circulo-azul-abstracto-sobre-tecnologia-fondo-negro_1142-9770.jpg?semt=ais_hybrid");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 3px 5px white;
+    width: 400px;
+    height: 500px;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+form h3{
+    color: white;
+    font-size: 30px;
+}
+.group-input{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.group-input input{
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+    width: 310px;
+    outline: none;
+}
+.group-input label{
+    color: white;
+    margin-bottom: 4px;
+}
+.group-input textarea{
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+    width: 310px;
+    outline: none;
+}
+form button{
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    width: 250px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgb(2, 155, 107);
+    animation: lados 2s ease-in-out infinite;
+}
+@keyframes lados{
+    0%{
+        margin: 0;
+    }
+    25%{
+        
+    }
+    50%
+    {
+        margin-left: -16px;
+    }
+    100%{
+        margin-right: -16px;
+        margin-left: -16px;
+    }
+}
+
+.ri-arrow-left-line{
+    color: #fff;
+    width: 50px;
+    height: 60px;
+    font-weight: bolder;
+    margin-left: -190vh;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    border: none;
+    border-radius: 50%;
+}
+.ri-arrow-left-line:hover{
+    color: rgb(3, 158, 122);
+}
+
