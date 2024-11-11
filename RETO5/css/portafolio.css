@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+}
+
+.logo a{
+    color: rgb(255, 255, 255);
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 2s ease-in-out;
+}
+a:hover{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    transform: translate3d(0px, -5px, 0px);
+    box-shadow:  0 3px 6px rgb(255, 255, 255);
+}
+
+.menu{
+    display: none;
+}
+
+@media (max-width: 700px) {
+    nav ul{
+        position: absolute;
+        top: 58px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: black;
+        gap: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    nav ul li{
+        padding: 20px;
+    }
+
+    .menu{
+        display: block;
+    }
+}
+/* sobre mi  */
+.sobre-mi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    width: 100%;
+    height: 720px;
+    background-image:linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    ), url("https://img.freepik.com/vector-gratis/fondo-escritorio-moderno-vector-diseno-azul-geometrico_53876-135923.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sobre-mi .yo{
+    width: 70%;
+    color: white;
+}
+
+.sobre-mi .yo h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.sobre-mi .yo p{
+    font-size: 18px;
+ line-height: 4vh;
+}
+.img img{
+    border: none;
+    border-radius: 50%;
+    animation: jump 4s ease-in-out infinite;
+}
+@keyframes jump{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
